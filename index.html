@@ -234,6 +234,48 @@
       #game video::-moz-focus-inner {
         border: 0;
       }
+
+      /* Inventory text spacing — keeps paragraphs separated from the video */
+      .inventory-text {
+        margin-top: 48px; /* increased space between video and inventory text */
+      }
+
+      /* Inventory Visual Integration */
+      .inventory-visual {
+        margin-top: 36px; /* space between inventory text and image */
+        border-radius: 14px;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 0 8px rgba(0, 255, 255, 0.35),
+          0 0 28px rgba(0, 255, 255, 0.12);
+        transition: box-shadow 180ms ease, transform 180ms ease;
+        text-align: center;
+      }
+
+      .inventory-visual img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border: none;
+        outline: none;
+        max-width: 880px; /* keeps image from getting too wide on large screens */
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+      }
+
+      .inventory-visual:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0, 255, 255, 0.08),
+          0 0 20px rgba(0, 255, 255, 0.18);
+      }
+
+      .inventory-visual:focus,
+      .inventory-visual:focus-visible {
+        outline: none;
+        box-shadow: 0 0 12px rgba(0, 255, 255, 0.55),
+          0 0 40px rgba(0, 255, 255, 0.18);
+      }
     </style>
   </head>
 
@@ -345,6 +387,61 @@
         />
         Your browser does not support the video tag.
       </video>
+
+      <!-- Inventory Section Inside #game (wrapped for spacing) -->
+      <div class="inventory-text">
+        <h2>The Inventory: The True Heart of PreNexus Trials</h2>
+
+        <div class="para">
+          In PreNexus Trials,
+          <strong
+            >the inventory is the hardest, most decisive tool in the
+            game</strong
+          >. It doesn’t just influence gameplay—it <strong>defines it</strong>,
+          shaping speed, strategy, and every encounter. Without the right gear,
+          rushing into battle is deadly; with careful planning, a single player
+          can control the flow of combat.
+        </div>
+
+        <div class="para">
+          Flexibility sets PreNexus Trials apart from traditional FPS shooters
+          that usually limit you to 2 or 3 weapons. You can become like the
+          <strong>Doom Slayer</strong>, carrying 5–10 weapons and dominating in
+          firepower. Or a <strong>grenade goblin</strong>, lurking in corners,
+          controlling rooms with explosive precision, eliminating or smoking out
+          enemy out of cover. Perhaps you’ll play a
+          <strong>field medic</strong>, staying out of sight, reviving
+          teammates, and keeping your faction in the fight.
+        </div>
+
+        <div class="para">
+          The conventional path is always an option. You can equip yourself as a
+          balanced unit with a bit of everything. But every item has a cost:
+          <strong>space is the ultimate currency</strong>. One slot per item
+          means that the choices you make are meaningful. Do you want heavy
+          firepower, or extra health and grenades? Specialize, and you excel at
+          that role; try to be an all-rounder, and you’ll be competent but never
+          unmatched. Every match is a careful dance of planning, adaptation, and
+          risk vs reward.
+        </div>
+
+        <div class="para">
+          In PreNexus Trials, the inventory <strong>is the game</strong>—master
+          it, and you control not just what you do, but
+          <strong>how the battle unfolds</strong>. Your choices dictate the
+          pace, suspense, and outcome of every encounter.
+        </div>
+
+        <!-- Inventory Visual -->
+        <div class="inventory-visual" tabindex="0">
+          <img
+            src="https://raw.githubusercontent.com/InfiniteADR/InfiniteADR.github.io/refs/heads/main/Inventory.png"
+            alt="PreNexus Trials Inventory"
+          />
+        </div>
+      </div>
+
+      <div class="divider"></div>
     </section>
 
     <div class="divider"></div>
@@ -366,7 +463,7 @@
         <li>
           <strong>Addressable niche:</strong> competitive PvP players and
           creators in the shooter space — target capture of
-          <strong>2%–5%</strong> of the global competitive shooter market over a multi-year growth horizon.
+          <strong>2%–5%</strong> of this niche over multi-year growth horizon.
         </li>
         <li>
           <strong>Low friction validation:</strong> prototypes that demonstrate
